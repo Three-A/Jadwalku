@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yudha.jadwalku.LoginActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.yudha.jadwalku.LoginActivity"
+        tools:showIn="@layout/activity_login">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_splash"
+            android:scaleType="centerCrop"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/_24sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Welcome"
+                    android:textColor="@color/colorGray200"
+                    android:textSize="@dimen/_36sdp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Ini adalah aplikasi untuk memberikan reminder atau jadwal"
+                    android:textColor="@color/colorGray200"
+                    android:gravity="center"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_8sdp"/>
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_white_transparant"
+                    android:hint="Email Address"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColorHint="@color/colorGray400"
+                    android:textColor="@color/white"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:fontFamily="@font/open_sans"
+                    android:layout_marginTop="@dimen/_16sdp"/>
+                <EditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_white_transparant"
+                    android:hint="Pasword"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColorHint="@color/colorGray400"
+                    android:textColor="@color/white"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:fontFamily="@font/open_sans"
+                    android:layout_marginTop="@dimen/_8sdp"/>
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_primary"
+                    android:textAllCaps="false"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_24sdp"
+                    android:fontFamily="@font/open_sans"/>
+
+                <TextView
+                    android:id="@+id/btnSignup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Register Here"
+                    android:textColor="@color/colorGray200"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_8sdp"/>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

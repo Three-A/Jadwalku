@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">JadwalKu</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="BASE_URL">https://obscure-caverns-78425.herokuapp.com/</string>
+</resources>
